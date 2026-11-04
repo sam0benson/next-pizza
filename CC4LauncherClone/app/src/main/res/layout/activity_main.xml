@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_dark">
+
+    <!-- Верхняя строка: часы + дата -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvClock"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="12:00"
+            android:textSize="34sp"
+            android:textColor="@color/text_primary"
+            android:fontFamily="sans-serif-light" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ср, 6 авг"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary" />
+    </LinearLayout>
+
+    <!-- Сетка ярлыков -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="4"
+        android:padding="10dp">
+
+        <include layout="@layout/item_shortcut" android:id="@+id/shortcutMusic" />
+        <include layout="@layout/item_shortcut" android:id="@+id/shortcutNav" />
+        <include layout="@layout/item_shortcut" android:id="@+id/shortcutPhone" />
+        <include layout="@layout/item_shortcut" android:id="@+id/shortcutRadio" />
+        <include layout="@layout/item_shortcut" android:id="@+id/shortcutCamera" />
+        <include layout="@layout/item_shortcut" android:id="@+id/shortcutSettings" />
+        <include layout="@layout/item_shortcut" android:id="@+id/shortcutBt" />
+        <include layout="@layout/item_shortcut" android:id="@+id/shortcutApps" />
+
+    </GridLayout>
+
+    <!-- Нижняя панель быстрого доступа -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:background="@color/bg_panel"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/btnBluetooth"
+            style="@style/QuickIconButton"
+            android:src="@drawable/ic_bluetooth"
+            android:contentDescription="Bluetooth" />
+
+        <ImageButton
+            android:id="@+id/btnVolume"
+            style="@style/QuickIconButton"
+            android:src="@drawable/ic_volume"
+            android:contentDescription="Громкость" />
+
+        <ImageButton
+            android:id="@+id/btnBrightness"
+            style="@style/QuickIconButton"
+            android:src="@drawable/ic_brightness"
+            android:contentDescription="Яркость" />
+
+        <ImageButton
+            android:id="@+id/btnAllApps"
+            style="@style/QuickIconButton"
+            android:src="@drawable/ic_apps"
+            android:contentDescription="Все приложения" />
+
+    </LinearLayout>
+
+</LinearLayout>

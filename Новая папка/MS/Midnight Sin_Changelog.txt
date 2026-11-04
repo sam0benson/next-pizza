@@ -1,0 +1,691 @@
+﻿v0.7.0 - 2025-07-25
+Hey guys,
+It’s been a very busy month, with the announcement on Steam and setting up the store page.
+Please add it to your wishlist, if you haven’t already, as it really helps the visibility on Steam!
+As decided in the poll, it’s Victoria’s turn this month.
+Annabelle and Victoria both have one more scene to catch up to the rest. After that, I can start
+focusing on the combined scenes (looking forward to that!).
+I hope you’ll enjoy it, and if you have any questions or comments, please let me know!
+All the best,
+Faerin
+Story
+• Added a new event for Kate.
+• Added a new weekend event for Victoria.
+• Added a new chore event for Victoria.
+Bugfixes
+• Fixed a bug causing the butt plug scene not to skip to the next day.
+• Fixed a bug causing the Hentai Impact not to play and/or continue playing.
+
+v0.6.3 - 2025-06-27
+Story
+• Added two new reading events for Madeline.
+• Added a new weekend event for Madeline.
+• Added a new outfit to Dark Desires (as a teaser for an upcoming update).
+UI/gameplay
+• Reordered some of the later events for Olivia, Annabelle, and Victoria for a smoother
+progression.
+Note: You will have to trigger Olivia’s and Annabelle’s weekend events again to
+fully update their stats.
+• Added achievements for each of the weekend events.
+Render
+• Changed the renders for the “Scrubble” board game to avoid potential legal issues.
+Bugfixes
+• Fixed a bug causing the wrong background music to play when loading a dialog.
+• Fixed a bug causing some dialogs not to be translated.
+• Fixed a bug causing Kate’s pool scene to trigger at the wrong time.
+
+v0.6.2 - 2025-05-31
+Story
+• Added a new pool event for Kate.
+• Added a new spy event for Kate:
+• Added a new weekend event for Annabelle.
+UI/gameplay
+• Added a new achievement for Annabelle (for the last workout event).
+Bugfixes
+• Fixed the completion percentage for the MC.
+• Moved the Scrabble event to Olivia’s gallery.
+• Rebecca no longer shows in the kitchen when she is spying on Madeline in the basement.
+• Fixed the click area for the girl as the pool on Saturday.
+• Blocked the toilet emergency from occurring on Saturday.
+
+v0.6.1 - 2025-04-26
+Hey guys,
+This month I have added two big new scenes. I was hoping to add some more content, but
+unfortunately, these scenes with multiple characters take a lot of time to set up and render.
+I hope you’ll like them!
+Next month I am planning on adding another weekend event (I will put up a poll for this) and I’ll
+start focusing on the main story a bit more too, so it doesn’t fall too much behind.
+I hope you’ll enjoy it and if you have any questions or comments, please let me know!
+All the best,
+Faerin
+
+Story
+• Added the remaining open dialogs for Annabelle.
+• Added a new workout event for Annabelle (and made it repeatable).
+• Added a new weekend event for Olivia.
+UI/gameplay
+• You will now instantly travel on the map, instead of having to wait for the animation
+to complete.
+• Requirements will now always be shown on choices.
+Bugfixes
+• Just some minor bugfixes this time.
+
+v0.6.0 - 2025-03-29
+Story
+• Added a new gardening event for Madeline.
+• Added a new night stalker event for Madeline.
+• Added all the preparations for the shared event on Saturday (paper-dolls, avatars,
+scene setups, new schedules, etc.).
+All of this took up a lot of time, but doesn’t add any new content (yet).
+However, starting next month I should be able to add at least one of these new
+scenes with each update.
+UI/gameplay
+• Added an achievement for helping Madeline’s girls.
+• Added 2 more open dialog moments to Annabelle (as she only had 1).
+Bugfixes
+• Re-encoded the animations of the previous update to prevent stuttering on lower-
+end systems.
+
+v0.5.4 - 2025-03-01
+• Added two new reading events for Madeline.
+• Added a new night stalker event for Madeline.
+• Added a new discipline event for Madeline.
+• Added a new sleepover event for Olivia.
+• Added a new event for Rebecca
+UI/gameplay
+• Added Kate’s spying event to her gallery.
+Bugfixes
+• Fixed a bug causing Olivia to not show in her room on the map during the
+eavesdropping event.
+• Fixed a bug causing missing labels in the French translation.
+
+v0.5.3 - 2025-01-31
+Hey guys,
+This month it was Olivia’s turn to “catch up”, so I’ve added several new scenes for her.
+The reason for this is there’s a big scene/event with all of the main girls together coming soon,
+which requires each of them to have certain stats.
+Now, Olivia, Annabelle, and Victoria are all up to that point. So next month, I’ll focus on getting
+Madeline there as well. So, hopefully, I can start adding the new scene the month after.
+I hope you’ll enjoy it and if you have any questions or comments, please let me know!
+
+Story
+• Added a new dinner event for Olivia.
+• Added a new discipline event for Olivia.
+• Added a new lingerie event for Olivia.
+• Added a new sleepover event for Olivia.
+• Added a new event for Rebecca.
+UI/gameplay
+• Changed Rebecca’s dialog during the intro to not result in any stat gain.
+• Rebecca’s first scene now awards 5 lust instead of 10 (preparing her for future
+content).
+• Fixed the center basement render to show Rebecca doing laundry.
+Bugfixes
+• Fixed achievement percentage for the MC.
+• Fixed Annabelle’s new bikini memory to show the correct background.
+• Fixed an error that occurred when the retry.sav is not available.
+• Fixed a bug causing replaying scenes during a single playthrough to sometimes show
+dialogs as white instead of gray.
+
+v0.5.2 - 2024-12-30
+Hey guys,
+This month, I’ve focused on adding new content for Annabelle. I didn’t get around to adding
+additional content for one of the maids, due to the Holidays, but I will make sure to add some
+scenes for them in the upcoming months.
+Happy Holidays everyone and enjoy the update!
+
+Story
+• Added a new event for Annabelle.
+• Added a new dinner event for Annabelle.
+• Added a new discipline event for Annabelle.
+• Added a new pool event for Annabelle.
+
+UI/gameplay
+• When returning to the fight club, the previously fought opponent is now
+automatically selected.
+
+Bugfixes
+• Fixed a bug causing Annabelle’s appointment event to be repeated after finishing the
+last one.
+• Fixed Annabelle’s open dialog. You can no longer skip her first point (if you don’t ask
+her about herself before she completes the assignment).
+• Fixed a bug causing the dialog counter not to reset when loading a game.
+
+v0.5.1 - 2024-11-30
+• Added a new photoshoot scene for Victoria.
+• Added a new dinner event.
+• Added a new discipline event for Victoria.
+UI/gameplay
+• Reviewed and updated all progression conditions for each girl and every scene.
+• Updated Madeline’s dialog when you enter her office after the big reveal.
+• The selected destination on the map will now be reset after a day-skip.
+Bugfixes
+• Fixed a bug causing the mouse rotation mini-game not to work for players with some
+regional settings.
+• Fixed the name input field in the intro to prevent the input of special characters.
+• Fixed a bug causing a dialog error when getting fired.
+• Fixed a bug causing the room image to show for a split second after fading in/out.
+• Fixed a bug that allowed Annabelle’s third workout event to trigger too soon.
+• Fixed a bug stopping skip (space/enter) to work after bonus images.
+• Fixed a bug stopping skip (space/enter) to work after fights.
+• Fixed a bug with the day skip function, causing the UI to get “stuck”.
+• Fixed a bug causing the scene not to reload after skipping the day.
+
+V0.5.0 - 2024-10-26
+Story
+• Added a new spy event for Olivia.
+• Added a new appointment event for Annabelle.
+• Added a new wine-drinking event for Madeline.
+• Added the first event of a new event chain for Madeline.
+• Added a new blackmail event.
+• Added a new dinner event.
+
+UI/gameplay
+• Added the discipline room.
+• Enabled saving during dialogs.
+• Added a skip day function (this only works when there are no appointments).
+• Added new dialogs to Madeline’s open dialog.
+•Added a new dialog to Olivia’s open dialog (after winning the swimming contest).
+• Added new dialog to Annabelle’s open dialog (after passing her painting assignment).
+• Added new dialog to Victoria’s open dialog (after promising to give her boxing lessons).
+• Added Madeline’s reading events to the gallery.
+• Disabled scrolling through dialogs while the menu is active.
+• Disables mouseover interactions while tutorials are active.
+• Reduced the difficulty on the mouse-rotation mini-game.
+
+V0.4.3 - 2024-09-28
+Story
+• Added a new HI event for Annabelle.
+• Added a new painting event for Annabelle.
+• Added the dialog option to lose to Victoria when sparring with her.
+• Added a new chore event for Victoria.
+• Added a new spy event for Victoria.
+• Added a new workout event for Madeline.
+• Added a new reading event for Madeline.
+• Added a new blackmail dialog.
+• Added a new blackmail event.
+UI/gameplay
+• Added an achievement for Olivia’s spa event.
+Bugfixes
+• Fixed a bug causing the fade text not to complete when clicking while it was
+animating.
+• Fixed a bug causing incorrect dialogs after skipping a fade transition.
+
+V0.4.2 - 2024-08-31
+Story
+• Added the spa date for Olivia.
+• Added a new workout event for Annabelle.
+• Added a new boxing lesson for Victoria.
+• Added a new chore for Victoria.
+UI/gameplay
+• Added Sergei as an unlockable opponent at the fight club.
+• Added an achievement for beating Sergei.
+• Added an achievement for paying back Ruslan.
+• Added a screen flash when the MC has an orgasm.
+• Added the default background music to the main menu.
+• Added short intro dialogs for the basement gym and backyard pool, to explain you
+can improve your stats there.
+(You will only see the first time you visit.)
+Bugfixes
+• Added a script that checks and corrects all the girls’ stats on loading a save.
+So this should prevent any stat bugs/inconsistencies from happening from now on.
+• Fixed a bunch of small bugs and inconsistent renders.
+
+Midnight Sin V0.4.1c - 2024-08-08
+Bugfixes
+
+Midnight Sin V0.4.1
+Story
+· Added a new dinner event for Victoria.
+· Added a new sunbathing event for Victoria.
+· Added a new photoshoot event for Victoria.
+· Added a new sleepover event for Olivia.
+· Added four new appointment events for Madeline
+· Added the dialog to compliment Madeline when she’s drinking wine in the backyard.
+
+UI/gameplay
+· The achievements for Olivia and Victoria are now hidden until discovered.
+· Added titles to the memories (on mouse over).
+
+Bugfixes
+· Added a one-time stat fix for Madeline, this should fix any incorrect love stat and set it to the correct number based on the events you have completed with her (22 max).
+· Fixed a bug when clicking the left arrow from the MC’s profile.
+· Fixed a bug causing Annabelle to be at the pool and in the basement at the same time.
+· Spying on Victoria after the Devon fight now shows the correct image.
+· Fixed a bug causing the enter name dialog to skip when pressing enter the line before.
+· Fixed the map location icon for Dark Desires.
+· Fixed rolling back dialog through animations.
+· Fixed an audio bug when rolling back.
+· Fixed lines showing up twice when rolling back.
+· Fixed a bug causing the first scroll back through dialogs not to register.
+· Fixed a bug causing you to be able to buy Annabelle’s workout outfit before you worked out with her.
+· Rollback is now disabled when the enter name dialog is active.
+
+V0.4.0 - 2024-06-29
+Story
+• Added a new tv event for Olivia.
+• Added a new fitness event for Annabelle.
+• Added a new appointment event for Annabelle.
+• Added a new HI event for Annabelle.
+• Added a new painting event for Annabelle.
+• Added a new boxing event for Victoria
+• Added a new chore event for Victoria.
+• Added the first event of the photoshoot event chain for Victoria.
+UI/gameplay
+• Updated the new loading screen (I’ll add more girls later on).
+Bugfixes
+• Fixed a bug that caused rooms not to refresh after closing an open dialog halfway through.
+• Fixed a bug when closing the open dialog before all topics were shown.
+• Fixed scrolling back during phone messages.
+• Fixed a bug causing the swimming contest to trigger before getting the book from Olivia.
+• Fixed a bug allowing you to participate in the swimming contest without buying the
+swimming trunks.
+• Fixed a bug allowing Olivia’s discipline scene to be repeated.
+• Fixed a bug causing the hint for Annabelle’s workout event to show up too early.
+• Fixed the map location indicator for the fetish store.
+• Fixed a bug causing tutorial popups to disappear when opening the settings.
+• Fixed a bug that sometimes occurred while scrolling back through dialog history.
+
+V0.3.2 - 2024-06-01
+Hey guys,
+I’ve really focused on adding more content this month, and I’m quite happy with the result.
+It’s “only” 3 scenes, but the swimming contest is the biggest scene so far.
+We are starting to get more into the story with each update and it’s all starting to come together.
+I hope you’ll enjoy it and if you have any questions or comments, please let me know!
+All the best,
+Faerin
+Story
+• Added the swimming contest for Olivia.
+• Added a new sleepover/blackmail event for Olivia.
+• Added the first event of the painting event chain for Annabelle.
+UI/gameplay
+• Added logging for stat gains (to track down bugs more easily).
+• Added/updated Annabelle’s room images (when spying).
+• The company is now closed during the weekend.
+• Added several hints in between events.
+Bugfixes
+• Fixed a bug causing Victoria’s open dialog to loop (when talking about Kate).
+• Fixed a bug in the dialog where you wish Madeline good night.
+• Fixed a bug causing dialog images to flicker slightly when changing.
+• Fixed a bug causing the workout outfit dialog to trigger for Annabelle before having worked
+out with her.
+• Fixed a bug causing the choice text to be incorrectly aligned sometimes.
+• Fixed a bug when you loaded a game from the opponent selection screen at the fight club.
+• Fixed a bug causing the wrong avatar animation to show (for some lines) after hiding the
+dialog.
+• Fixed a bug when rolling back while an animation was playing.
+• Fixed a bug causing dialog lines to show up as gray even though they weren’t seen before.
+• Fixed a bug when manually unpausing the fight minigame.
+
+V0.3.1 - 2024-04-27
+Story
+• Added all default dialogs for Victoria.
+• Added open dialog for Victoria.
+• Added 3 new events to Victoria’s boxing event chain.
+• Added a new event to Victoria’s sunbathing event chain.
+• Added a new event for Victoria's chore event chain.
+• Added the fetish store to the mall (just a teaser). UI/gameplay
+• Added an achievement for maxing all three stats.
+• Updated the overall progress to include memories.
+• Added all new paper-doll and avatar animations for Victoria.
+• The HI quest is now repeatable (after meeting Annabelle).
+
+V0.3.0 - 2024-03-30
+Story
+• You will now receive your initial payment on the first day at 16:00 (for existing saves, this will
+trigger as soon as 16:00 on any day).
+• Added new map location: Ruslan’s office.
+• Added a new event for Ruslan to pay off your debt.
+• Added new map location: Mega Mall, with several shops:
+o Sportswear
+o Swimwear
+o Lingerie
+• Added new map location: Mega Mall Parking Garage.
+• You can now make money by fighting in the fight club against 2 new opponents (more will be
+unlocked in future updates):
+o Alex
+o Duncan
+• Extended the Hentai Impact event chain for Annabelle.
+o Updated the UI and the map.
+o Added several new locations and characters you can visit (more content will be
+added later).
+o Added 3 new events for Annabelle.
+• Added a new event for Annabelle.
+• Extended the workout event chain for Annabelle.
+UI/gameplay
+• Added 3 new stats to the MC’s profile: Power, Skill, and Endurance.
+These stats will affect the difficulty of your fights (you can read the tooltips for more
+information).
+• Added 3 new events to increase your stats: working out, boxing, and swimming.
+• Added some items to increase the effectiveness of your training.
+• Added a new (skippable) mini-game inside of Hentai Impact.
+• Added bonus points: these can be used in future updates to unlock bonus content.
+• Added a bunch of new teaser outfits that you can buy at the mall.
+Note: the actual scenes with the girls are not implemented yet, this is just a preview of what
+you will be able to get them to wear in future updates.
+• Added a choice to Victoria’s appointment event to go in and check on her or wait in the car
+(if you are not ready to fight Devon yet).
+• Added an achievement for saving Victoria from Devon.
+• Fights can now be skipped. However, skipping fights will not reward any bonus points.
+• Achievement progression is now counted per achievement instead of per achievement
+“step”.
+Bugfixes
+• Fixed a bug causing the volume settings to reset when restarting the game.
+• Fixed a bug that caused the fighting mini-game to skip/reset when pressing space.
+• Fixed a bug causing Madeline’s reading hint to keep showing.
+• Fixed a bug during the intro when picking the UI color.
+• Fixed a bug if you clicked the wait button just before travel ended.
+• Fixed a bug causing the hitbox of interactions to be offset on certain aspect ratios.
+• Fixed widescreen issues.
+
+V0.2.1 - 2024-02-24
+Hey guys,
+For this month’s update, I’ve added new scenes a mini-game feature I’ve been planning on since the
+start. I think it ties in nicely with the bodyguard theme and it will be a way to earn some extra money in-
+game later on.
+Please let me know if you like it, so I know if I should spend time on stuff like this, or if you rather just
+skip it.
+All the best,
+Faerin
+Story
+• Added a new appointment event for Victoria.
+• Added two new events for Madeline and added her open dialog.
+• Added a new dinner event.
+• Added a new event for Annabelle.
+•
+UI/gameplay
+• Added a new mini-game for fights.
+• Added stat requirements for choices (these will be shown on the choice, when applicable).
+• Added a magnifying glass icon to indicate a scene has bonus content.
+• Added paperdoll animations for the leather outfits.
+Bugfixes
+• Fixed a bug causing Olivia to gain incorrect stats during the third appointment event and
+during dinner (note: loading an old save will automatically correct this stat, she should have
+a maximum of 39/40 in the current version).
+• Fixed a bug causing the book of Envy to be added to your inventory twice.
+
+v0.2.0 - 2024-01-27
+Hey guys,
+For this month’s update, I focused on adding more new content and getting a bit further into the main
+story. I hope you all like the new scenes and if you have feedback, please let me know!
+All the best,
+Faerin
+Story
+• Added a new workout event for Annabelle.
+• Added a new paired event for Olivia and Madeline.
+• Added a new spy event for Kate.
+• Added a new appointment event for Olivia.
+• Added a new event for Olivia.
+• Added Annabelle’s open dialog (unlocks after you reach relationship level 2.)
+• Added Kate’s open dialog.
+UI/gameplay
+• Added all current memories (replayable scenes) for each girl.
+• The alarm now triggers from 30 minutes (or less) before the appointment, instead of 60.
+• Added hints for returning each book.
+Bugfixes
+• The “H” key now also hides the dialog frame itself (not just the dialog).
+• Fixed a bug causing hints not to refresh at the start of a new day.
+• The “Man of the House” achievement will now be completed when skipping the intro as
+well.
+
+v0.1.9 - 2023-12-30
+Hey guys,
+For this month’s update
+All the best,
+Faerin
+Story
+• Added a new event for Olivia to get the final book.
+• Added a new puzzle after returning the final book.
+• Added a new event after completing the puzzle.
+• Added a new spy event for Olivia that unlocks her naked paper-doll animation.
+• Added a new spy event for Annabelle that unlocks her naked paper-doll animation.
+• Added a new spy event for Victoria that unlocks her naked paper-doll animation.
+• Added a new spy event for Madeline that unlocks her naked paper-doll animation.
+UI/gameplay
+• Added 50+ new renders for all the rooms and timeslots that are connected to the new
+content/mechanic.
+• Added several achievements.
+• Achievement descriptions are now hidden until the corresponding content is triggered.
+• Increased the overall skip speed (when holding down CTRL).
+• Added a hint for Rebecca’s dinner invitation.
+• Added an achievement for inspecting all of the painting.
+Bugfixes
+• Fixed the heavy bag highlight image when Victoria is boxing.
+• Skipping no longer cuts the sound of completing an achievement.
+• Added translation for:
+o Enter name dialog
+o Choices
+o Transition screens
+o Tutorials
+o Hints
+o Achievements
+• Fixed a bug that caused you to be able to clog the toilet before talking to take in Annabelle’s
+room.
+• Fixed a bug causing problems when playing with Turkish regional settings.
+• Fixed the progression tracker.
+• Removed the “skipping” label during game-over.
+• Fixed the black screen when replaying the thug scene after game over.
+• Fixed Olivia’s dialog about Annabelle (after the initial dialog.)
+• Added an accented uppercase font for the translations.
+
+v0.1.8 - 2023-11-26
+Hey guys,
+Now that I can fully focus on content, the game is coming together a bit faster.
+I think I should be able to add more sexual content in the next update(s), as the individual stories are
+progressing nicely.
+Thanks a lot for all your support, I hope you like where the game & story are going!
+The next update will add a big “twist”, so I’m really looking forward to that.
+All the best,
+Faerin
+
+Story
+• Added a new event for Olivia in her bedroom.
+• Added the next part of the watching TV event chain for Olivia.
+• Added the next appointment event for Annabelle.
+• Added a new event to get into Annabelle’s room when Kate is cleaning.
+• Added the first part of the Hentai Impact event chain for Annabelle.
+• Added a new dialog for Rebecca, inviting you to join the girls for dinner (this will trigger
+automatically once you have finished the 4th blackmail event).
+• Added the family dinner dialog (this will unlock once you are invited to join).
+• Added a new triggerable dialog for Olivia to the family dinner event.
+• Added a new triggerable dialog for Annabelle to the family dinner event.
+• Added 2 more “hidden” books.
+UI/gameplay
+• Added several new minor object interactions around the mansion.
+• Added default appointment events for each girl (after you have finished the current
+content).
+• The hint icons can now be clicked to open the corresponding character’s profile.
+• Added keyboard shortcuts for character screen (c), inventory (i), and map (m).
+• Added the censored version of the naked animations for each girl.
+• Adjusted the return times for the appointments according to the required travel time.
+• Annabelle’s door no longer shows as locked when you need to pick her up for her
+appointment.
+Bugfixes
+• Fixed a bug causing the city map the be locked after the first day.
+• Fixed the tooltip for the love progression bar on the character profile.
+• Fixed a bug causing the music to still play faintly when the volume was set to 0.
+• Fixed a bug causing Rebecca and the washing machine interactions to overlap.
+• Fixed a bug causing a black screen to appear during some interaction dialogs.
+• Fixed a bug causing the 2nd TV event to trigger before asking about the laptop.
+
+v0.1.7 - 2023-10-28
+Hey guys,
+I’ve started filling in the blanks by adding more dialogs and appointment events. I’m looking forward to
+the story unfolding in the next months. I’ve also implemented a new dialog system that I’ve been
+planning on adding for a while now, let me know if you guys like it.
+Enjoy!
+Faerin
+Story
+• Added the first appointment for Annabelle.
+• Added the 2nd appointment event for Olivia.
+• Added the 2nd appointment event for Victoria.
+• Add the gym.
+• Added the community center.
+• Added a new blackmail dialog.
+• Added a new blackmail event for Madeline.
+• Added 2 books of sin that can now be found.
+• Added all default dialogs for Olivia, including the new open dialog.
+• Added all default dialogs for Annabelle (the open dialog will be added next month).
+UI/gameplay
+• Added an “open dialog system” enabling you to talk to characters about various topics
+(during certain dialogs) to get new information and gain stats.
+• Added a tutorial for dialog topics.
+• Added some simple interaction dialogs for some items around the house.
+Bugfixes
+• Fixed a bug causing some dialogs to remain on screen when skipping.
+• Fixed a bug causing some sound loops not to play when skipping.
+• Fixed a bug causing the navigation arrows to disappear.
+• Fixed a bug causing the last line of a dialog to be recorded incorrectly, resulting in some lines
+showing as previously seen (gray) incorrectly.
+• Fixed a bug when loading a game from within a dialog.
+• The “fired” event can no longer trigger while traveling (but will trigger after).
+• Fixed a bug causing the schedule to disappear after 1 week of in-game time.
+• Fixed a bug causing the interactions to no longer be highlighted.
+• Fixed a bug causing the autosave to trigger during an appointment.
+
+v0.1.6 - 2023-09-29
+Hey guys,
+For this month’s update, I’ve added several new scenes, as well as some locations and characters.
+Things are coming together now and I expect to be able to add more content each month.
+Have fun!
+All the best,
+Faerin
+Story
+• Added the first appointment event for Olivia.
+• Added the first appointment event for Madeline.
+• Added a new event for Victoria when she is sunbathing.
+• Added a new event for Madeline when she is drinking wine.
+• Added two new locations (these unlock after going there for an appointment).
+• Added the third blackmailer’s dialog.
+• Added the third blackmail event.
+• Added all default dialogs for Madeline (these will be extended during the next few months).
+• Added a small teaser for an upcoming puzzle in the study (note: you can’t solve it yet.)
+UI/gameplay
+• Changed the opacity and font size of the hint tooltips.
+• Added a shortcut (h) for hiding the dialog.
+Bugfixes
+• Fixed a bug causing black screens on rollback.
+• Fixed a bug causing ctrl not to skip the last line of a dialog.
+• Fixed a bug causing the UI to lock when switching languages during dialogs.
+• Stat increase notifications no longer block mouse clicks.
+
+v0.1.5 - 2023-08-26
+Hey guys,
+I’m finally able to focus more on the content side. From now on, the amount of new scenes every month
+should increase a bit. I hope you like it!
+All the best,
+Faerin
+Story
+• Added default appointment evens for all the girls (these are just placeholders for now until
+the actual events are finished.)
+• Added the first appointment event for Victoria.
+• Added a new eavesdrop scene for Olivia.
+• Added the second blackmailer’s dialog.
+• Added the second blackmail event.
+• Added a new event for Olivia when she is watching TV.
+UI/gameplay
+• Added the option to skip the intro (after entering your name).
+• Implemented a hint tracker (you can switch it on/off on the character profile).
+• Added hints for all the events that are currently implemented.
+• Wait now skips to full hours (instead of waiting precisely 60 minutes).
+• Added a reminder for appointments to the clock.
+The alarm will start “ringing” if the pick-up event can be.
+• Missing an appointment will trigger “game-over”, you will have to restart that day (or load a
+manual save if you have one).
+• Added the first replayable gallery scenes for Rebecca and Annabelle.
+Bugfixes
+• Fixed a bug causing ctrl to skip certain dialog triggers.
+• Fixed a graphic glitch with dialog names.
+• Fixed a bug causing the “go to bed” dialog to be skipped.
+• Fixed a bug causing the navigation arrows to disappear.
+
+v0.1.4 - 2023-07-29
+Hey guys,
+For this month’s update, I have finally started adding content. I still had to do some preparation and
+coding for some new elements (like the phone dialog and the new animation system), but I am confident
+that next month will be a big content update. I know it’s been a bit of a slow start, so thank you for
+sticking with me, and I promise your patience will be rewarded in the following updates!
+Feedback is appreciated, I’d love to know what you think about the story, characters, and UI so far!
+All the best,
+Faerin
+Story
+• Added a new scene for Rebecca.
+• Added a new dialog for Rebecca the morning after.
+• Added the first blackmailer’s dialog.
+• Added the first blackmail event.
+UI/gameplay
+• Added a new animation system. This will hide the dialog and allow for multiple speed
+settings and camera angles (depending on the scene) until you continue the scene.
+• Implemented a dynamic phone messaging system.
+• Scrolling back through the dialog/scene history now works for everything (images,
+animations, sound effects, etc.).
+• Added the first hints (a default hint is shown if there are no available hints).
+• Added the first achievements.
+• Added a sleep interaction.
+• Added an event that automatically makes you go to your room if you stay up until 1:00 am.
+• Added the first achievements.
+• Replaced “updated_translation” with the original English text (with underscore prefix).
+• Added the first hint for Olivia’s new event and default hints for the rest (when there are no
+hints available).
+
+v0.13(2023.07.04)
+Not available.
+
+v0.1.2
+Hey guys,
+
+Here’s this month's update of Midnight Sin.
+
+I've finished the last few things for the engine and added the introduction story.
+
+For next month the only thing left to do is to add is a short "tutorial" and then you'll be able to start roaming the mansion and interacting with the girls.
+
+I should be able to add a good number of dialogue and interactions with the girls next month and expect I will pick up the pace after that now the engine is done.
+
+I hope you all like where it's going so far
+
+All the best,
+
+Faerin
+
+• The laundry room.
+
+• Added the final scene interactions with the maids.
+
+• Added the introduction story.
+
+• Added scrolling images.
+
+• Added scrolling back through the dialogue now shows the corresponding images/animations.
+
+• Added sound effects.
+
+• Added a skip speed setting.
+
+• Added an option to show/hide navigation arrows.
+
+• Fixed some graphic glitches when skipping through images.
+
+v0.1.1(2023.05.02)
+Hey guys,
+Here’s this month's update of Midnight Sin. Honestly, it’s still mostly a test/demo version, as there isn’t
+any actual content yet.
+Implementing the dialog editor and setting up all the times tables and interaction renders took up a lot
+of time. But now most of that is finished, I expect to be able to focus on adding content starting next
+month.
+If you want to play the actual story, I’d suggest you skip this one.
+But if you are interested in seeing how everything is developing, have a look and let me know your
+thoughts!
+All the best,
+Faerin
+• Added the 2 maid characters (Rebecca & Kate) and their profile pages.
+• Added interaction images for all the girls (weekdays only, so far) and implemented their
+timetables.
+• Added paper-doll animations for each of the girls and their different outfits.
+• Added the second half of the backyard and the arboretum.
+• Added an interaction highlight on mouseover (this can be enabled/disabled in the settings).
+• Added the current day of the week to the clock.
+• Implemented room locks (and you will now be kicked out if you wait inside a locked room).
+• Your current location is now shown on the map (highlighted room)
+
+v0.1.0
+first release

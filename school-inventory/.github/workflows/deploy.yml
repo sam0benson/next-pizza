@@ -1,0 +1,109 @@
+# Проверка → сборка Docker-образа в GitHub → публикация в GHCR → деплой в Dokploy.
+# Сервер ничего не собирает, только скачивает готовый образ (экономит ОЗУ на VPS).
+name: Build and deploy
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: inventory
+          POSTGRES_PASSWORD: ci
+          POSTGRES_DB: inventory
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U inventory -d inventory"
+          --health-interval 5s --health-timeout 5s --health-retries 20
+    env:
+      DATABASE_URL: postgresql://inventory:ci@localhost:5432/inventory
+      APP_ORIGIN: https://ci.example.org
+      APP_SECRET: ci-secret-ci-secret-ci-secret-ci-secret
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - run: npx prisma validate
+      - run: npx prisma generate
+      # Схема применяется к пустой БД: ловит ошибки schema.prisma до деплоя
+      - run: npx prisma db push --skip-generate
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm audit --omit=dev --audit-level=critical
+
+  image:
+    needs: test
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    outputs:
+      image: ${{ steps.name.outputs.image }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: name
+        run: echo "image=ghcr.io/${GITHUB_REPOSITORY,,}" >> "$GITHUB_OUTPUT"
+      - uses: docker/setup-buildx-action@v3
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - uses: docker/build-push-action@v6
+        with:
+          context: .
+          platforms: linux/amd64
+          push: true
+          tags: |
+            ${{ steps.name.outputs.image }}:latest
+            ${{ steps.name.outputs.image }}:${{ github.sha }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+  deploy:
+    needs: image
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Trigger Dokploy
+        env:
+          DOKPLOY_URL: ${{ secrets.DOKPLOY_URL }}
+          DOKPLOY_TOKEN: ${{ secrets.DOKPLOY_TOKEN }}
+          COMPOSE_ID: ${{ secrets.DOKPLOY_COMPOSE_ID }}
+        run: |
+          clean() { printf '%s' "$1" | tr -d '[:space:]"'"'"; }
+          URL=$(clean "$DOKPLOY_URL"); TOKEN=$(clean "$DOKPLOY_TOKEN"); CID=$(clean "$COMPOSE_ID")
+          if [ -z "$URL" ] || [ -z "$TOKEN" ] || [ -z "$CID" ]; then
+            echo "::warning::Секреты DOKPLOY_URL / DOKPLOY_TOKEN / DOKPLOY_COMPOSE_ID не заданы — образ опубликован, деплой пропущен"
+            exit 0
+          fi
+          case "$URL" in http://*|https://*) ;; *) URL="https://$URL" ;; esac
+          # оставляем только схему и хост (отрезаем /dashboard/... и т.п.)
+          URL=$(printf '%s' "$URL" | sed -E 's#^(https?://[^/]+).*#\1#')
+          echo "Dokploy: $URL (len ${#URL}), composeId len ${#CID}"
+          curl -fsS --retry 2 -X POST "$URL/api/compose.deploy" \
+            -H 'accept: application/json' \
+            -H 'Content-Type: application/json' \
+            -H "x-api-key: $TOKEN" \
+            -d "{\"composeId\":\"$CID\",\"title\":\"GitHub Actions ${GITHUB_SHA::7}\"}"
+          echo
+          echo "Деплой запущен: ${GITHUB_SHA::7}"

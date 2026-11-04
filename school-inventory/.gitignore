@@ -1,0 +1,6 @@
+node_modules
+.next
+.env
+# только папка data в корне (файлы приложения), а не app/api/data
+/data/
+*.tsbuildinfo

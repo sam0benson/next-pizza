@@ -1,0 +1,268 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model School {
+  id       String @id @default(cuid())
+  name     String
+  settings Json   @default("{}")
+}
+
+model User {
+  id           String   @id @default(cuid())
+  schoolId     String
+  email        String   @unique
+  name         String
+  password     String
+  role         String   @default("OPERATOR")
+  scope        String   @default("IT")
+  active       Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  // Двухфакторная аутентификация (TOTP). Секреты хранятся зашифрованными APP_SECRET.
+  totpSecret   String?
+  totpPending  String?
+  totpEnabled  Boolean  @default(false)
+  totpLastStep Int?
+}
+
+model Session {
+  id       String   @id
+  userId   String
+  deviceId String?
+  expires  DateTime
+
+  @@index([userId])
+  @@index([deviceId])
+}
+
+// Доверенные устройства. Вход возможен только с устройства, одобренного администратором.
+model Device {
+  id            String    @id @default(cuid())
+  schoolId      String
+  userId        String
+  tokenHash     String
+  name          String    @default("")
+  userAgent     String    @default("")
+  ip            String    @default("")
+  code          String
+  status        String    @default("PENDING")
+  ticketHash    String?
+  ticketExpires DateTime?
+  createdAt     DateTime  @default(now())
+  approvedAt    DateTime?
+  approvedBy    String?
+  lastSeen      DateTime  @default(now())
+
+  @@unique([tokenHash, userId])
+  @@index([schoolId, status])
+  @@index([userId])
+}
+
+model LoginAttempt {
+  key   String   @id
+  count Int      @default(0)
+  until DateTime
+}
+
+model Location {
+  id          String @id @default(cuid())
+  schoolId    String
+  name        String
+  building    String @default("Основной корпус")
+  floor       String @default("1")
+  zone        String @default("")
+  responsible String @default("")
+
+  @@index([schoolId])
+}
+
+model FloorPlan {
+  id       String @id @default(cuid())
+  schoolId String
+  name     String
+  image    String
+  regions  Json   @default("[]")
+}
+
+model Asset {
+  id          String   @id @default(cuid())
+  schoolId    String
+  inventory   String
+  name        String
+  category    String
+  scope       String   @default("IT")
+  serial      String   @default("")
+  locationId  String
+  responsible String   @default("")
+  condition   String   @default("Исправно")
+  status      String   @default("ACTIVE")
+  cost        Decimal  @db.Decimal(16, 2)
+  acquired    DateTime @default(now())
+  fields      Json     @default("{}")
+  notes       String   @default("")
+  qrCode      String?  @unique
+  createdAt   DateTime @default(now())
+
+  @@unique([schoolId, inventory])
+  @@index([schoolId, scope, status])
+}
+
+model Material {
+  id       String  @id @default(cuid())
+  schoolId String
+  name     String
+  category String  @default("Материалы")
+  scope    String  @default("IT")
+  unit     String  @default("шт.")
+  minimum  Decimal @default(0) @db.Decimal(16, 3)
+
+  @@index([schoolId, scope])
+}
+
+model Lot {
+  id         String   @id @default(cuid())
+  schoolId   String
+  materialId String
+  locationId String
+  quantity   Decimal  @db.Decimal(16, 3)
+  price      Decimal  @db.Decimal(16, 2)
+  received   DateTime @default(now())
+
+  @@index([schoolId, materialId, locationId])
+}
+
+model Document {
+  id         String    @id @default(cuid())
+  schoolId   String
+  scope      String
+  kind       String
+  number     String
+  date       DateTime
+  status     String    @default("DRAFT")
+  reason     String
+  commission String    @default("")
+  lines      Json
+  postedAt   DateTime?
+  createdBy  String
+  createdAt  DateTime  @default(now())
+
+  @@index([schoolId, scope])
+}
+
+model Audit {
+  id        String   @id @default(cuid())
+  schoolId  String
+  scope     String
+  userId    String
+  action    String
+  entityId  String
+  details   Json
+  createdAt DateTime @default(now())
+
+  @@index([schoolId, createdAt])
+}
+
+model Stocktake {
+  id        String    @id @default(cuid())
+  schoolId  String
+  scope     String
+  name      String
+  status    String    @default("OPEN")
+  snapshot  Json
+  results   Json      @default("{}")
+  createdAt DateTime  @default(now())
+  closedAt  DateTime?
+}
+
+model Attachment {
+  id           String   @id @default(cuid())
+  schoolId     String
+  targetType   String
+  targetId     String
+  originalName String
+  storageKey   String   @unique
+  mime         String
+  size         Int
+  createdBy    String
+  createdAt    DateTime @default(now())
+
+  @@index([schoolId, targetType, targetId])
+}
+
+model Repair {
+  id          String    @id @default(cuid())
+  schoolId    String
+  assetId     String
+  problem     String
+  executor    String    @default("")
+  status      String    @default("OPEN")
+  cost        Decimal   @default(0) @db.Decimal(16, 2)
+  notes       String    @default("")
+  dueAt       DateTime?
+  completedAt DateTime?
+  createdAt   DateTime  @default(now())
+
+  @@index([schoolId, assetId])
+}
+
+model Loan {
+  id        String    @id @default(cuid())
+  schoolId  String
+  assetId   String?
+  lotId     String?
+  recipient String
+  quantity  Decimal   @db.Decimal(16, 3)
+  returned  Decimal   @default(0) @db.Decimal(16, 3)
+  dueAt     DateTime?
+  notes     String    @default("")
+  createdBy String
+  createdAt DateTime  @default(now())
+  closedAt  DateTime?
+
+  @@index([schoolId, assetId])
+  @@index([schoolId, lotId])
+}
+
+model AssetSet {
+  id        String   @id @default(cuid())
+  schoolId  String
+  name      String
+  assetIds  Json
+  createdAt DateTime @default(now())
+
+  @@index([schoolId])
+}
+
+// Вход по Face ID / Touch ID / отпечатку (WebAuthn passkey).
+// Ключ привязан к доверенному устройству, на котором его включили.
+model Passkey {
+  id         String    @id // credential ID, base64url
+  schoolId   String
+  userId     String
+  deviceId   String
+  publicKey  Bytes
+  counter    BigInt    @default(0)
+  transports String    @default("")
+  name       String    @default("")
+  createdAt  DateTime  @default(now())
+  lastUsed   DateTime?
+
+  @@index([userId])
+  @@index([deviceId])
+}
+
+// Одноразовые challenge для WebAuthn (живут 5 минут).
+model AuthChallenge {
+  id        String   @id // sha256(challenge)
+  purpose   String
+  userId    String?
+  tokenHash String?
+  expires   DateTime
+
+  @@index([expires])
+}

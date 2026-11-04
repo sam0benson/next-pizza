@@ -1,0 +1,432 @@
+{
+  "api": {
+    "services": [
+      "HandlerService",
+      "LoggerService",
+      "StatsService",
+      "RoutingService"
+    ],
+    "tag": "api"
+  },
+  "inbounds": [
+    {
+      "listen": "127.0.0.1",
+      "port": 62789,
+      "protocol": "tunnel",
+      "settings": {
+        "rewriteAddress": "127.0.0.1"
+      },
+      "tag": "api"
+    },
+    {
+      "listen": "0.0.0.0",
+      "port": 8443,
+      "protocol": "vless",
+      "settings": {
+        "clients": [
+          {
+            "email": "Den-iPhone",
+            "flow": "xtls-rprx-vision",
+            "id": "f7fca8e2-b0ee-4504-8ecd-0f1fff0d09f0"
+          },
+          {
+            "email": "Rita-iPhone",
+            "flow": "xtls-rprx-vision",
+            "id": "e8edee4e-5974-497b-9dcc-2f6d9e569bf7"
+          },
+          {
+            "email": "Den-Mac",
+            "flow": "xtls-rprx-vision",
+            "id": "4e33f705-1eac-4424-ab8f-5bd8a0b7eb7c"
+          },
+          {
+            "email": "TV",
+            "flow": "xtls-rprx-vision",
+            "id": "504c9ad5-aa0a-466d-804e-a197d32b4789"
+          },
+          {
+            "email": "PC",
+            "flow": "xtls-rprx-vision",
+            "id": "a896e537-f8ed-4cdf-84d9-b249388bc644"
+          },
+          {
+            "email": "Portable",
+            "flow": "xtls-rprx-vision",
+            "id": "dbe8de6e-eb06-45a6-a231-ff3b2c5f380f"
+          }
+        ],
+        "decryption": "none"
+      },
+      "sniffing": {
+        "destOverride": [
+          "http",
+          "tls",
+          "quic",
+          "fakedns"
+        ],
+        "enabled": false,
+        "metadataOnly": false,
+        "routeOnly": false
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "maxClientVer": "",
+          "maxTimediff": 0,
+          "minClientVer": "",
+          "mldsa65Seed": "",
+          "privateKey": "SGtQIoKfHC7Ss7aF3hPX0EIe-5l6aeoFgqApRp8l_1M",
+          "serverNames": [
+            "sub.den-vpn.net.ru"
+          ],
+          "shortIds": [
+            "9022708fb13fe932",
+            "096e80cdea864e0e",
+            "6cc9362886fa2778",
+            "3bd428d7bb35a558",
+            "c80bbd758d96d3d8",
+            "a30b58e3e14d16f3",
+            "535f32e768b1bf43",
+            "ddfff00cb29eccc6"
+          ],
+          "show": false,
+          "target": "127.0.0.1:9443",
+          "xver": 0
+        },
+        "security": "reality",
+        "tcpSettings": {
+          "acceptProxyProtocol": true,
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "inbound-8443-tcp"
+    },
+    {
+      "listen": "0.0.0.0",
+      "port": 13349,
+      "protocol": "vless",
+      "settings": {
+        "clients": [
+          {
+            "email": "Den-iPhone_1",
+            "id": "e37b98c9-d035-4e3a-aa75-d6a1a53d26b5"
+          },
+          {
+            "email": "Rita-iPhone_1",
+            "id": "1a9c5248-1ffa-4640-823a-faa50e3723ec"
+          },
+          {
+            "email": "Den-Mac_1",
+            "id": "a956f013-c358-41fa-81be-2be680edd83e"
+          },
+          {
+            "email": "TV_1",
+            "id": "df0f7422-726c-4789-a4e6-9290e55725b1"
+          },
+          {
+            "email": "PC_1",
+            "id": "e58db522-a1e9-42c6-ab0d-d63fcdefaa76"
+          },
+          {
+            "email": "Portable_1",
+            "id": "343e363f-71a0-450e-8c0d-69ef11ed033d"
+          }
+        ],
+        "decryption": "none",
+        "fallbacks": []
+      },
+      "sniffing": {
+        "destOverride": [
+          "http",
+          "tls",
+          "quic",
+          "fakedns"
+        ],
+        "enabled": false,
+        "metadataOnly": false,
+        "routeOnly": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "acceptProxyProtocol": false,
+          "headers": {},
+          "host": "den-vpn.net.ru",
+          "path": "/13349/kxZARe21Yn"
+        }
+      },
+      "tag": "inbound-13349"
+    },
+    {
+      "listen": "/dev/shm/uds2023.sock,0666",
+      "port": 0,
+      "protocol": "vless",
+      "settings": {
+        "clients": [
+          {
+            "email": "Den-iPhoneX",
+            "id": "6400b719-0f77-4de8-b768-2d9a8fe0dc3b"
+          },
+          {
+            "email": "Rita-iPhoneX",
+            "id": "ca803d07-71eb-4fdf-a15a-5d08d0b5370d"
+          },
+          {
+            "email": "Den-MacX",
+            "id": "65df5931-f3f7-4cc3-a207-2e5d90ec0d09"
+          },
+          {
+            "email": "TVX",
+            "id": "c6ca9dda-f970-4332-8289-7cc78a035f3c"
+          },
+          {
+            "email": "PCX",
+            "id": "849e5187-b0ee-401d-8aa2-404c9a2f58e4"
+          },
+          {
+            "email": "PortableX",
+            "id": "4b6b2b74-0048-40f8-bd36-b793d0a63056"
+          }
+        ],
+        "decryption": "none",
+        "fallbacks": []
+      },
+      "sniffing": {
+        "destOverride": [
+          "http",
+          "tls",
+          "quic",
+          "fakedns"
+        ],
+        "enabled": true,
+        "metadataOnly": false,
+        "routeOnly": false
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "none",
+        "sockopt": {
+          "V6Only": false,
+          "acceptProxyProtocol": false,
+          "dialerProxy": "",
+          "domainStrategy": "UseIP",
+          "interface": "",
+          "mark": 0,
+          "tcpFastOpen": true,
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 0,
+          "tcpMaxSeg": 1440,
+          "tcpMptcp": true,
+          "tcpNoDelay": true,
+          "tcpUserTimeout": 10000,
+          "tcpWindowClamp": 600,
+          "tcpcongestion": "bbr",
+          "tproxy": "off"
+        },
+        "xhttpSettings": {
+          "headers": {},
+          "host": "den-vpn.net.ru",
+          "mode": "packet-up",
+          "noSSEHeader": false,
+          "path": "/VMA5TV7FYK",
+          "scMaxBufferedPosts": 30,
+          "scMaxEachPostBytes": "1000000",
+          "xPaddingBytes": "100-1000"
+        }
+      },
+      "tag": "inbound-/dev/shm/uds2023.sock,0666:0|"
+    },
+    {
+      "listen": "0.0.0.0",
+      "port": 33619,
+      "protocol": "trojan",
+      "settings": {
+        "clients": [
+          {
+            "email": "Den-iPhoneT",
+            "password": "ubNUnAfjlr"
+          },
+          {
+            "email": "Rita-iPhoneT",
+            "password": "LzVU5UGAKj"
+          },
+          {
+            "email": "Den-MacT",
+            "password": "Nd09MlWN2y"
+          },
+          {
+            "email": "TVT",
+            "password": "qhH1okkos1"
+          },
+          {
+            "email": "PCT",
+            "password": "jXuWgSEBYK"
+          },
+          {
+            "email": "PortableT",
+            "password": "VKYOPP9FDg"
+          }
+        ],
+        "fallbacks": []
+      },
+      "sniffing": {
+        "destOverride": [
+          "http",
+          "tls",
+          "quic",
+          "fakedns"
+        ],
+        "enabled": false,
+        "metadataOnly": false,
+        "routeOnly": false
+      },
+      "streamSettings": {
+        "grpcSettings": {
+          "authority": "den-vpn.net.ru",
+          "multiMode": false,
+          "serviceName": "/33619/PpPLXM1coR"
+        },
+        "network": "grpc",
+        "security": "none"
+      },
+      "tag": "inbound-33619"
+    },
+    {
+      "listen": "0.0.0.0",
+      "port": 64328,
+      "protocol": "hysteria",
+      "settings": {
+        "clients": [
+          {
+            "auth": "AnomMmnf7A",
+            "email": "Den-iPhone"
+          }
+        ],
+        "version": 2
+      },
+      "sniffing": {
+        "destOverride": [
+          "http",
+          "tls",
+          "quic",
+          "fakedns"
+        ],
+        "enabled": false,
+        "metadataOnly": false,
+        "routeOnly": false
+      },
+      "streamSettings": {
+        "hysteriaSettings": {
+          "auth": "",
+          "udpIdleTimeout": 60,
+          "version": 2
+        },
+        "network": "hysteria",
+        "security": "tls",
+        "tlsSettings": {
+          "alpn": [
+            "h3"
+          ],
+          "certificates": [
+            {
+              "buildChain": false,
+              "certificateFile": "/root/cert/den-vpn.net.ru/fullchain.pem",
+              "keyFile": "/root/cert/den-vpn.net.ru/privkey.pem",
+              "oneTimeLoading": false,
+              "usage": "encipherment"
+            }
+          ],
+          "cipherSuites": "",
+          "disableSystemRoot": false,
+          "echServerKeys": "ACCbyDVTschvYmOYycnXrHCqfWBSq7O+NlP4fW9cuyXKOwBh/g0AXQAAIAAgea5cugnwFfCXRr9i//QFXARCLB1kWev6ocJfuE7gRzkAJAABAAEAAQACAAEAAwACAAEAAgACAAIAAwADAAEAAwACAAMAAwAOZGVuLXZwbi5uZXQucnUAAA==",
+          "enableSessionResumption": false,
+          "maxVersion": "1.3",
+          "minVersion": "1.2",
+          "rejectUnknownSni": false,
+          "serverName": "den-vpn.net.ru"
+        }
+      },
+      "tag": "inbound-64328"
+    }
+  ],
+  "log": {
+    "access": "none",
+    "dnsLog": false,
+    "error": "",
+    "loglevel": "warning",
+    "maskAddress": ""
+  },
+  "metrics": {
+    "listen": "127.0.0.1:11111",
+    "tag": "metrics_out"
+  },
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {
+        "finalRules": [
+          {
+            "action": "block",
+            "ip": [
+              "geoip:private"
+            ]
+          },
+          {
+            "action": "allow"
+          }
+        ]
+      },
+      "tag": "direct"
+    },
+    {
+      "protocol": "blackhole",
+      "settings": {},
+      "tag": "blocked"
+    }
+  ],
+  "policy": {
+    "levels": {
+      "0": {
+        "statsUserDownlink": true,
+        "statsUserOnline": true,
+        "statsUserUplink": true
+      }
+    },
+    "system": {
+      "statsInboundDownlink": true,
+      "statsInboundUplink": true,
+      "statsOutboundDownlink": false,
+      "statsOutboundUplink": false
+    }
+  },
+  "routing": {
+    "domainStrategy": "AsIs",
+    "rules": [
+      {
+        "inboundTag": [
+          "api"
+        ],
+        "outboundTag": "api",
+        "type": "field"
+      },
+      {
+        "ip": [
+          "geoip:private"
+        ],
+        "outboundTag": "blocked",
+        "type": "field"
+      },
+      {
+        "outboundTag": "blocked",
+        "protocol": [
+          "bittorrent"
+        ],
+        "type": "field"
+      }
+    ]
+  },
+  "stats": {}
+}

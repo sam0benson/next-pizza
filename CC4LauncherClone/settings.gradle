@@ -1,0 +1,2 @@
+rootProject.name = "CC4LauncherClone"
+include ':app'

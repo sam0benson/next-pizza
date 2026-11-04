@@ -1,0 +1,37 @@
+{
+  "name": "school-inventory",
+  "version": "0.5.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "prisma generate && next build",
+    "start": "next start",
+    "db:push": "prisma db push",
+    "seed": "tsx prisma/seed.ts",
+    "test": "tsx --test tests/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "device": "tsx scripts/device.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.19.0",
+    "@simplewebauthn/browser": "^13.3.0",
+    "@simplewebauthn/server": "^13.3.3",
+    "bcryptjs": "^3.0.2",
+    "exceljs": "^3.4.0",
+    "jsqr": "^1.4.0",
+    "next": "^16.3.7",
+    "qrcode": "^1.5.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/qrcode": "^1.5.5",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "prisma": "^6.12.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.8.0"
+  }
+}
